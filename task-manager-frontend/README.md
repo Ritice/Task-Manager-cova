@@ -1,4 +1,4 @@
-# Task Manager - Frontend (React + Vite + TypeScript)
+r# Task Manager - Frontend (React + Vite + TypeScript)
 
 Interface web du Task Manager, consommant l'API Spring Boot (`task-manager-backend`).
 
