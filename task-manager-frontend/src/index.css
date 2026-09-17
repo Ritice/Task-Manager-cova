@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #E9ECE9;
+  --color-paper-dim: #DFE3DE;
+  --color-surface: #FFFFFF;
+  --color-ink: #1C2321;
+  --color-ink-soft: #4B554E;
+  --color-moss: #3B6255;
+  --color-moss-dark: #2A473D;
+  --color-amber: #C97B3D;
+  --color-amber-dim: #E7CBAF;
+  --color-clay: #A8452F;
+  --color-sage: #7C9B79;
+  --color-sage-dim: #DCE6DA;
+  --color-line: #D3D8D0;
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+* {
+  border-color: var(--color-line);
+}
+
+::selection {
+  background-color: var(--color-amber-dim);
+}
+
+/* Focus visibility kept consistent across all interactive elements */
+:focus-visible {
+  outline: 2px solid var(--color-moss);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
